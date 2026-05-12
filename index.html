@@ -3,79 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>漫畫王國 | 當直播遇見文藝復興</title>
+    <title>漫畫王國 | 量子占星漫畫屋</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@300;400;900&display=swap');
-        body { font-family: 'Noto Sans TC', sans-serif; }
+        body { font-family: 'Noto Sans TC', sans-serif; background: #fdfcfb; }
         .serif { font-family: 'Noto Serif TC', serif; }
-        .gradient-bg { background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); }
-        .video-container { clip-path: inset(0 0 0 0 round 2rem); }
-        .floating { animation: floating 3s ease-in-out infinite; }
-        @keyframes floating {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
         .gradient-text { background: linear-gradient(90deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="gradient-bg text-stone-900">
+<body class="text-stone-900">
 
-    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-white/10 backdrop-blur-md">
-        <div class="text-xl font-black tracking-tighter uppercase">Manga <span class="text-amber-700">Kingdom</span></div>
-        <div class="bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full font-bold animate-pulse shadow-lg uppercase">Live Now</div>
-    </nav>
-
-    <header class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute z-30 p-5 text-center">
-            <h1 class="text-5xl md:text-7xl font-black mb-4 gradient-text">漫畫王國</h1>
-            <p class="text-xl md:text-2xl font-light tracking-widest text-stone-600">當遊戲直播遇見達文西油畫</p>
-        </div>
-        <div class="absolute inset-0 z-10 bg-black opacity-30"></div>
-        <video autoplay muted loop playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
-            <source src="hero-video.mp4" type="video/mp4">
-        </video>
+    <header class="py-12 text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 serif">首發主打：達文西版《唐吉訶德》</h1>
+        <div class="h-1 w-20 bg-amber-600 mx-auto"></div>
     </header>
 
-    <section class="py-20 px-4 max-w-6xl mx-auto">
-        <div class="text-center mb-16 px-4">
-            <h2 class="text-3xl font-bold mb-4 serif italic">首發主打：達文西版《唐吉訶德》</h2>
-            <div class="h-1 w-20 bg-amber-600 mx-auto"></div>
+    <main class="max-w-4xl mx-auto px-6 pb-20">
+        <div class="bg-white p-4 rounded-3xl shadow-2xl mb-12 border border-stone-100">
+            <div class="flex items-center justify-center bg-stone-50 rounded-2xl overflow-hidden min-h-[400px]">
+                <img src="cover.jpg" class="max-w-full h-auto object-contain" alt="唐吉訶德">
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start px-4">
-            <div class="bg-white p-2 rounded-2xl shadow-2xl border border-stone-100 overflow-hidden">
-                <div class="flex items-center justify-center bg-stone-50 rounded-xl overflow-hidden">
-                    <img src="cover.jpg" class="w-full h-auto object-contain" alt="唐吉訶德">
-                </div>
-            </div>
-
+        <div class="grid md:grid-cols-2 gap-12 items-start">
             <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-stone-800">極致藝術與 AI 的碰撞</h3>
-                <p class="text-stone-600 leading-relaxed font-light">
-                    打破二次元邊界！我們用 500 年前的古典油畫靈魂，重新定義現代漫畫的張力。跟著最強小鴨 VTuber，一起走進名畫裡的冒險世界。
-                </p>
-                <ul class="space-y-4 text-sm text-stone-500">
-                    <li class="flex items-center"><span class="text-amber-600 mr-2">✓</span> 500 年前的古典油畫質感</li>
-                    <li class="flex items-center"><span class="text-amber-600 mr-2">✓</span> 結合現代遊戲直播的動態張力</li>
-                    <li class="flex items-center"><span class="text-amber-600 mr-2">✓</span> 4K 高解析度數位原畫收藏</li>
+                <h2 class="text-3xl font-bold serif gradient-text">極致藝術與 AI 的碰撞</h2>
+                <ul class="space-y-4 text-stone-600">
+                    <li class="flex items-center">✓ 500 年前的古典油畫質感</li>
+                    <li class="flex items-center">✓ 結合現代遊戲直播的動態張力</li>
+                    <li class="flex items-center">✓ 解鎖從異世界歸來的小鴨劇情</li>
                 </ul>
-                
-                <div class="pt-8">
-                    <button disabled class="w-full py-4 bg-stone-400 text-white text-center rounded-full text-xl font-bold shadow-lg cursor-not-allowed">
-                        🔒 產品籌備中 (NT$299)
-                    </button>
-                    <p class="text-xs text-center mt-4 text-amber-700 font-bold">帶上帳密後一鍵解鎖，敬請期待！</p>
+            </div>
+
+            <div class="bg-amber-50 p-8 rounded-3xl border border-amber-200 shadow-inner">
+                <h3 class="text-xl font-bold mb-2 text-center text-amber-900">支持原創計畫</h3>
+                <p class="text-center text-stone-500 mb-6 text-sm">解鎖全集 50 幅數位珍藏原畫</p>
+                <div class="text-center mb-6">
+                    <span class="text-4xl font-black text-amber-700">NT$ 299</span>
                 </div>
+
+                <div id="paypal-button-container"></div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <footer class="py-12 bg-stone-900 text-stone-500 text-center text-xs tracking-widest">
-        <p>&copy; 2026 MANGA KINGDOM STUDIO</p>
-        <p class="mt-2 uppercase">Taipei // Meta-Art Project</p>
-    </footer>
+    <script src="https://www.paypal.com/sdk/js?client-id=AegB_AB_G-TqcIagVIm3U25mMSH0dp32hyn2LvmQIg17TOCW1oE0cUsmeOF1RGpEQHevsoLJs7V6PFqz&currency=TWD"></script>
 
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '299'
+                        },
+                        description: '漫畫王國：50幅珍藏原畫 (NT$299)'
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('交易成功！感謝您的支持，' + details.payer.name.given_name + '！');
+                    // 這裡可以跳轉到您的漫畫下載頁面
+                    // window.location.href = "/success.html";
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
 </body>
 </html>
